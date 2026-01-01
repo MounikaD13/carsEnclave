@@ -1,0 +1,101 @@
+.car-card {
+    transition: box-shadow 0.2s ease;
+}
+
+.car-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Image container for zoom */
+.img-container {
+    overflow: hidden; /* prevents image from spilling out */
+}
+
+.img-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+/* Zoom effect on hover */
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+/* ------------------- List Group ------------------- */
+
+/* Remove default blue for active */
+.list-group-item.active {
+    background-color: black !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5;
+    color: black;
+    font-weight: 500;
+}
+
+
+.year-slider input[type="range"] {
+    accent-color: black;
+}
+
+.year-slider .form-range::-webkit-slider-thumb {
+    background: black;
+}
+
+.year-slider .form-range::-moz-range-thumb {
+    background: black;
+}
+
+/* Target the slider track for Chrome, Safari, Edge */
+.year-slider input[type="range"]::-webkit-slider-runnable-track {
+  background: black;      /* Make the track black */
+  height: 6px;            /* Adjust thickness if needed */
+  border-radius: 3px;     /* Rounded corners */
+}
+
+/* Target the slider track for Firefox */
+.year-slider input[type="range"]::-moz-range-track {
+  background: black;
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Target the slider track for IE/Edge Legacy */
+.year-slider input[type="range"]::-ms-track {
+  background: black;
+  height: 6px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* Pagination base */
+.pagination .page-link {
+    color: #000;
+    /* text black */
+    border-color: #56c3cd;
+}
+
+/* Hover */
+.pagination .page-link:hover {
+    background-color: #44a7c2;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Active page */
+.pagination .page-item.active .page-link {
+    background-color: #38a6ba;
+    border-color: #000;
+    color: #fff;
+}
+
+/* Disabled arrows */
+.pagination .page-item.disabled .page-link {
+    color: #999;
+    border-color: #ccc;
+}

@@ -1,0 +1,49 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://via.placeholder.com/1600x900");
+  background-size: cover;
+  background-position: center;
+  margin-top: 56px;
+}
+
+.brand-img {
+  width: 120px;
+  opacity: 0.8;
+  transition: transform 0.3s;
+}
+
+.brand-img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.car-card {
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+.testimonial-card-2 {
+  background-color: #d8f9fdf5;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.testimonial-card-2 i {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+.testimonial-card-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.test{
+  background-color: black;
+}
