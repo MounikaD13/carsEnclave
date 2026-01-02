@@ -52,7 +52,7 @@ export default function Login() {
         overflow: "hidden",
         position: "relative",
         backgroundImage:
-          "url(https://images.pexels.com/photos/26578524/pexels-photo-26578524.jpeg)",
+          "url(/images/pexels-photo-26578524.jpeg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
