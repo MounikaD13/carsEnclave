@@ -63,7 +63,7 @@ export default function CarForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="row g-2 bg-light p-4">
+    <form onSubmit={handleSubmit} className="row g-2 bg-white p-4">
       {["brand", "model", "price", "year", "stock", "fuel"].map((field) => (
         <div className="col-md-5" key={field}>
           <input className="form-control" name={field} placeholder={field.toUpperCase()} value={car[field]} onChange={handleChange} required />

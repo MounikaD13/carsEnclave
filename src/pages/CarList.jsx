@@ -268,13 +268,13 @@ export default function CarList() {
                 <td>{car.fuel}</td>
                 <td>
                   <button
-                    className="btn btn-dark btn-sm me-2"
+                    className="btn btn-outline-dark btn-sm me-2"
                     onClick={() => startEdit(car)}
                   >
                     Edit
                   </button>
                   <button
-                    className="btn btn-danger btn-sm"
+                    className="btn btn-outline-danger btn-sm"
                     onClick={() => deleteCar(car.id)}
                   >
                     Delete
