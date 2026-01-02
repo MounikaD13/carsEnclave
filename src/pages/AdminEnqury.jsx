@@ -41,7 +41,9 @@ export default function AdminEnquiries() {
   fetchEnquiries();
 };
 
-
+const h2style={
+  color:"white"
+}
 
  return (
   <div className="admin-enqury"style={{
@@ -60,13 +62,13 @@ export default function AdminEnquiries() {
         style={{
           position: "absolute",
           inset: 0,
-          background: "rgba(0,0,0,0.65)",
+          background: "rgba(0, 0, 0, 0.18)",
 
         }}
       />
 
     <div className="container">
-    <h2>Customer Enquiries</h2>
+    <h2 className="my-4" style={h2style}>Customer Enquiries</h2>
     <div className="row">
       {enquiries.map((e) => (
         <div key={e.id} className="col-md-6 mb-3">
