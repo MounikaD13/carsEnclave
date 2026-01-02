@@ -81,7 +81,7 @@ export default function CarDetails() {
       overflow: "hidden",
       position: "relative",
       backgroundImage:
-        "url(https://images.pexels.com/photos/10386396/pexels-photo-10386396.jpeg)",
+        "url(/images/pexels-photo-18045835.jpeg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat"

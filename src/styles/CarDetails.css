@@ -57,7 +57,7 @@
 .enquiry-section {
   max-width: 950px;
   margin: 20px auto;
-  background: #f9f9f98b;
+  background: #f9f9f9a1;
   padding: 20px;
   border-radius: 12px;
 }
@@ -72,7 +72,7 @@
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  background: rgba(245, 245, 245, 0.797);
+  background: white;
 }
 
 .enquiry-section button {
