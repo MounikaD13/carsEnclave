@@ -274,7 +274,7 @@ export default function CarList() {
                     Edit
                   </button>
                   <button
-                    className="btn btn-outline-danger btn-sm"
+                    className="btn btn-outline-danger mt-1 mt-lg-0 btn-sm"
                     onClick={() => deleteCar(car.id)}
                   >
                     Delete
