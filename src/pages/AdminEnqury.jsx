@@ -49,7 +49,7 @@ export default function AdminEnquiries() {
         overflow: "hidden",
         position: "relative",
         backgroundImage:
-          "url(https://images.pexels.com/photos/6054241/pexels-photo-6054241.jpeg)",
+          "url(/images/photo-1623742962105-faae8ad99f84.avif)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
