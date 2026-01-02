@@ -32,7 +32,6 @@ export default function Cars() {
           stock: Number(doc.data().stock),
           images: doc.data().images || [],
         }));
-        console.log("Fetched cars:", carData);
         setCars(carData);
         setBrands([...new Set(carData.map((car) => car.brand))]);
         setLoading(false);
@@ -140,7 +139,7 @@ export default function Cars() {
           {/* DESKTOP SEARCH */}
           <div className="d-none d-md-block">
             <label className="fw-bold ms-md-5 text-white" style={{ fontSize: "1.4rem" }}>Search</label>
-            <input className="form-control mb-3 w-75 ms-md-5" placeholder="Brand or Model" value={search} onChange={(e) => setSearch(e.target.value)} />
+            <input className="form-control mb-3 w-75 ms-md-5" placeholder="model" value={search} onChange={(e) => setSearch(e.target.value)} />
           </div>
 
           {loading && <p>Loading cars...</p>}
@@ -172,7 +171,7 @@ export default function Cars() {
                         </h5>
                       </div>
                       {car.stock === 0 && <span className="badge bg-light text-dark">Preorders </span>}
-                      {car.stock >0 && <span className="badge bg-dark ">Test Drive <i class="fa-solid fa-check"></i></span>}
+                      {car.stock >0 && <span className="badge bg-dark ">Test Drive <i className="fa-solid fa-check"></i></span>}
                     </div>
                   </div>
                 </Link>

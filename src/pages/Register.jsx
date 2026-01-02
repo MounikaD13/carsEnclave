@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate  } from "react-router-dom";
 import { auth, db } from "../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 
 export default function Register() {
+  const navigate=useNavigate()
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -40,6 +41,7 @@ export default function Register() {
       });
 
       alert("Registration successful!");
+      navigate("/"); 
       setForm({
         name: "",
         email: "",
@@ -55,7 +57,7 @@ export default function Register() {
   };
 
   return (
-    <div className="login-bg d-flex align-items-center justify-content-center"
+    <div className="register-bg d-flex align-items-center justify-content-center"
       style={{
         minHeight: "100vh",
         overflow: "hidden",
@@ -79,7 +81,7 @@ export default function Register() {
         className="card p-4 shadow-lg"
         style={{
           width: "100%",
-          maxWidth: "420px",
+          maxWidth: "500px",
           zIndex: 2,
           borderRadius: "16px",
           background: "rgba(255, 255, 255, 0.22)",
